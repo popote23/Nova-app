@@ -9,7 +9,7 @@
         android:usesCleartextTraffic="false"
         android:label="NOVA TV"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NovaApp">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         <activity
             android:name=".PlayerActivity"
