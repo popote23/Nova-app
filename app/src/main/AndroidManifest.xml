@@ -1,9 +1,6 @@
 
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.novatv.app">
-
-    <uses-sdk android:minSdkVersion="21" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,21 +9,11 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         android:usesCleartextTraffic="true">
 
-        <activity
-            android:name=".PlayerActivity"
-            android:exported="false" />
+        <activity android:name=".PlayerActivity" android:exported="false" />
+        <activity android:name=".SatelliteActivity" android:exported="false" />
+        <activity android:name=".ChannelActivity" android:exported="false" />
 
-        <activity
-            android:name=".SatelliteActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ChannelActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
