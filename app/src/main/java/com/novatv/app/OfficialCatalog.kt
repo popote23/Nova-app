@@ -1,46 +1,18 @@
+
 package com.novatv.app
 
 object OfficialCatalog {
+
     val channels = listOf(
         Channel(
-            "Al Aoula",
-            "Maroc | Officiel | Généraliste | Actualités | Divertissement",
-            "https://snrtlive.ma/fr/al-aoula"
+            name = "France 24 English",
+            group = "Actualités internationales",
+            url = "https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_900.m3u8"
         ),
         Channel(
-            "2M",
-            "Maroc | Officiel | Généraliste | Actualités | Divertissement",
-            "https://2m.ma/fr/"
-        ),
-        Channel(
-            "Al Maghribia",
-            "Maroc | Officiel | Généraliste | Culture",
-            "https://snrtlive.ma/fr/almaghribia"
-        ),
-        Channel(
-            "Arryadia",
-            "Maroc | Officiel | Sport",
-            "https://snrtlive.ma/fr/arryadia"
-        ),
-        Channel(
-            "Tamazight",
-            "Maroc | Officiel | Culture | Documentaires",
-            "https://snrtlive.ma/fr/tamazight"
-        ),
-        Channel(
-            "Laâyoune",
-            "Maroc | Officiel | Régional | Actualités | Culture",
-            "https://snrtlive.ma/fr/laayoune"
-        ),
-        Channel(
-            "Athaqafia",
-            "Maroc | Officiel | Culture | Documentaires | Éducation",
-            "https://snrtlive.ma/fr/athaqafia"
-        ),
-        Channel(
-            "Assadissa",
-            "Maroc | Officiel | Religion",
-            "https://snrtlive.ma/fr/assadissa"
+            name = "France 24 Arabic",
+            group = "Actualités internationales",
+            url = "https://live.france24.com/hls/live/2037222/F24_AR_HI_HLS/master_900.m3u8"
         )
     )
 }
