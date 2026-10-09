@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.NovaTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/nova_bg</item>
+        <item name="android:colorAccent">@color/nova_cyan</item>
+        <item name="colorPrimary">@color/nova_cyan</item>
+        <item name="colorPrimaryVariant">@color/nova_purple</item>
+        <item name="colorSecondary">@color/nova_cyan</item>
+        <item name="android:navigationBarColor">@color/nova_bg</item>
+        <item name="android:statusBarColor">@color/nova_bg</item>
+    </style>
+</resources>
