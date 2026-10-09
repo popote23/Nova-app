@@ -7,6 +7,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,10 +29,20 @@ jobs:
         with:
           gradle-version: "8.10.2"
 
-      - name: Compiler l'APK
-        run: gradle assembleDebug
+      - name: Vérifier les fichiers XML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
+          while IFS= read -r file; do
+            echo "Vérification de : $file"
+            xmllint --noout "$file" || exit 1
+          done < <(find app/src -name AndroidManifest.xml -type f)
+
+      - name: Compiler l'APK avec diagnostic
+        run: gradle assembleDebug --stacktrace --info
 
       - name: Publier l'APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: NOVA-TV-APK
